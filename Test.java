@@ -85,20 +85,20 @@ public class Test implements ActionListener{
         midInsidePanel = new JPanel();
             midInsidePanel.setBackground(new Color(0x06202B));
             midInsidePanel.setPreferredSize(new Dimension(600, 3000));
-
-        //midPanel section
-        midPanel = new JPanel();
-            midPanel.setBackground(new Color(0x06202B));
-            midPanel.setPreferredSize(new Dimension(600, 3000));
-            midPanel.add(midTopPanel);
-
+        
         //scrollPane section
         scrollPane = new JScrollPane(midInsidePanel);
             scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_ALWAYS);
             scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
             scrollPane.setBorder(BorderFactory.createEmptyBorder()); // Remove default border
             scrollPane.setPreferredSize(new Dimension(600, 600)); // Adjusted size as needed
-            midPanel.add(midInsidePanel);
+       
+        //midPanel section
+        midPanel = new JPanel();
+            midPanel.setBackground(new Color(0x06202B));
+            midPanel.setPreferredSize(new Dimension(600, 3000));
+            midPanel.add(midTopPanel);
+            midPanel.add(scrollPane);
 
         //segment section
         segment = new JPanel();
