@@ -12,7 +12,6 @@ public class Test implements ActionListener{
     private int courseCount = 0;
     private List<JPanel> courseEntryPanels = new ArrayList<>();
     private JPanel coursePanel;
-    private JTextField courseNameField, unitsField, gradeField;
     private double result;
     private JScrollPane scrollPane;
 
