@@ -188,7 +188,7 @@ public class Copy implements ActionListener {
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(Test::new);
+        new Test();
     }
 
     @Override
